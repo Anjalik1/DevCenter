@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>Windows</MyType>
+    <ProductVersion>9.0.20907</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDC5B6DD-A2CF-41C7-8EB7-E90CBB95B657}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>SNProcedureDetails</AssemblyName>
+    <OutputType>Library</OutputType>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>1</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>True</GenerateRevisionNumber>
+    <AssemblyCompanyName>Cerner Corporation</AssemblyCompanyName>
+    <StartWithIE>False</StartWithIE>
+    <RootNamespace>Cerner.SNProcedureDetails</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>UpliftGAC_StrongNameKey.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Program Files\Cerner\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32</DefineConstants>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CernerFoundations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\CernerFoundations.DLL</HintPath>
+    </Reference>
+    <Reference Include="Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DmDcmLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\DmDcmLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DualLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\DualLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="Foundations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\Foundations.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\ApplicationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationFramework.GUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\ApplicationFramework.GUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="PcsCollectionDumps2">
+      <HintPath>C:\Program Files\Cerner\PcsCollectionDumps2.dll</HintPath>
+    </Reference>
+    <Reference Include="SNCommon2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cerner\SNCommon2.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DmDcmHelper.cs" />
+    <Compile Include="frmAddRemoveAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRemoveAreas.Designer.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>frmAddRemoveAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedureDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedureDetails.Designer.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>frmProcedureDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="snproceduredetails_ResourceHandler.cs" />
+    <EmbeddedResource Include="frmAddRemoveAreas.resX">
+      <DependentUpon>frmAddRemoveAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedureDetails.resX">
+      <DependentUpon>frmProcedureDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UpliftGAC_StrongNameKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SurginetReusable\SurginetReusable.csproj">
+      <Project>{d9894df7-7b40-453c-9677-9b40e3a823f2}</Project>
+      <Name>SurginetReusable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
